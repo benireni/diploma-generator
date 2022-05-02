@@ -1,0 +1,36 @@
+Primeiro computador digital: Electronic Numeric Integrator And Computer (WW2)
+Programação era mantida no hardware -> evolução implicou em começar a armazená-la na memória
+
+1º Geração - Von Neumann & Turing
+Programa armazenado:
+ - Registradores
+ - Unidade de Controle
+ - Unidade Lógica e Aritmética
+ - Equipamentos de IO
+
+Pattern de arquitetura sempre vai ser UC, ULA, Memória e IO.
+
+Assembly 4 MIPS - cada comando equivale 32 bits.
+
+## Arquitetura de Von Neumann
+
+Hierarquia da arquitetura:
+Applications software -> System software -> Hardware
+
+Três pilares:
+ - Dados e instruções são representados na memória
+ - A memória é endereçada pela posição e não pelo conteúdo
+ - A execução das instruções é considerada sequencial
+
+## Visão Geral
+
+### Ciclo de Instrução: Fetch & Execute
+
+- Fetch:
+    Program Counter (PC) terá o endereço da próxima instrução a ser executada - não conta, apenas aponta a próxima instrução
+    Processador busca a instrução no MBR (Memory Buffer Register - celula de memória) apontada pela MAR (Memory Address Register - endereço) fornecida pelo PC
+    PC é incrementado
+
+- Execute:
+    UC decodifica a instrução e determina quais ações são necessárias - configurando os sinais de controle
+    Execução.

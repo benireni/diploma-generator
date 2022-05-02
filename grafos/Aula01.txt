@@ -1,0 +1,70 @@
+Programma:
+- Grafos Dirigidos
+- Grafos Não Dirigidos
+- Grafos Ponderados
+- Caminhos Eulerianos
+- Caminhos Hamiltonianos
+- Operações em Grafos
+- DFS & BFS
+- Isomorfismo
+- Representação via Matrizes e Listas de Adjacência
+- Caminhos mínimos
+- Componentes conexos e fortemente conexos
+- Pontes e vértices de articulação
+- Ordenação topológica
+- Árvores geradoras mínimas
+- Fluxo em rede
+- Noções de redes complexas e aplicações
+
+Avaliação:
+- RunCodes (Individual)
+- Final do curso, projeto em duplas
+- Improváveis provas escritas
+
+-- Exercícios em qualquer linguagem que o RunCodes suporte - Python
+Desenvolver queue, priority queue, stack e os principais sorting algorithms em python.
+
+## Introdução 01
+
+Leonhard Euler - Matemático Suíço (1707-1783)
+
+Identidade de Euler e^(i*pi) + 1 = 0
+Função exponencial
+
+Pai da teoria dos grafos
+Problema das 7 Pontes
+
+Definição básica:
+Um grafo G é uma estrutura de dados constituída de um conjunto de vértices (V)
+e um conjunto de arestas (A), formando então G()
+
+e.g.:
+V = {A, B, C, D}
+A = { (AB), (BC), (CA) }
+G(V,A)
+
+Multigrafo ou grafo múltiplo: um grafo -não dirigido- que possui vértices ligados por mais de uma aresta
+Diz-se que vértices são vizinhos se forem extremos de mesma aresta
+A ordem de grafos é dada através da cardinalidade do seu conjunto de vértices -> |V|
+
+Um caminho entre dois vértices é uma sequência de vértices e arestas que une ambos
+Um caminho que conta com X vértices, obrigatoriamente contará com X-1 arestas
+O comprimento de um caminho é dado pelo número de arestas percorridas de um vértice à outro
+Um caminho simples: todos os nós que compõem o caminho são distintos
+
+Um ciclo é um caminho onde o nó de partida é igual ao nó de chegada
+Ciclo simples: o único nó com duplicata tem de ser o de partida
+
+## Matriz de Adjacência
+
+Representação possível de um grafo (facilita visibilidade de grafos complexos)
+- Os vértices são nomeados com números
+- matriz_de_adjacencia[nó1][nó2] = número de arestas que os ligam diretamente
+- Para grafos não dirigidos é redundante
+
+Primeiro exercício:
+- Função que retorna a matriz M de um grafo modelo Erdös-Renyi (entrada N e p)
+
+APPENDS:
+- Grafos direcionais = grafos dirigidos
+- Grafos bidirecionais = grafos não dirigidos

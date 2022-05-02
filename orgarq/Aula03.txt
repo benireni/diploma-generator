@@ -1,0 +1,24 @@
+## Ciclo de execução
+UC decodifica a instrução e determina quais ações são necessárias - a UC configura os sinais de controle de acordo com a instrução
+
+A execução da instrução se resume a uma das seguintes possibilidades:
+ - Processador-Memória
+ - Processador-E/S
+ - Processamento de dados
+ - Controle
+ - Combinações dessas 4 possibilidades
+
+Registradores:
+ - PC- incrementado
+ - AC (acumulador): General Purpose Registrator
+
+Código de operações:
+
+ - 0001 = carregar AC a partir do endereço de memória especificado
+    mem -> AC
+
+ - 0010 = armazenar o valor contido em AC no endereço de memória especificado
+    AC -> mem
+
+ - 0101 = acrescentar ao valor contido em AC o valor contido no endereço de memória especificado
+    AC + mem -> AC

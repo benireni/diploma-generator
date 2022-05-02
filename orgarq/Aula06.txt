@@ -1,0 +1,15 @@
+Instruções:
+ - Tipo R
+    add, sub, or, move
+    operator <destiny_address>, <operand1>, <operand2>
+ - Tipo I
+    lw (load word), sw (store word), li (load immediate), la (load address)
+    operator <operand_address1>, <offset><operand_address2>
+ - condicionais
+    beq, bnq, blt
+    operator <compared_address1>, <compared_address2>, <destiny_address>
+ - incondicionais
+    j (jump)
+    j <destiny_address>
+
+

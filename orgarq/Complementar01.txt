@@ -1,0 +1,16 @@
+a)
+- O que é ISA (Instructions Set Architecture)
+Descreve o que exatamente significam e podem significar comandos na arquitetura que representa. Ela dita qual será o modelo de memória dos comandos, tipos de dados suportados, etc.
+
+- Fetch, Decode, Execute, Write Back Lifecycle (Fetch-Execute Cycle)
+Ciclo de vida de processamento de um processador com comandos na fila de execução.
+
+- Camadas computacionais de abstração
+Evolução de poder computacional desde átomos até aplicações de grande porte
+
+b)
+- O que seria a parte responsável por "predict" na microarquitetura?
+- Como uma float é armazenada?
+
+c) Computing Abstraction Layers
+Achei incrivelmente interessante e extremamente didática a abordagem de denominar e explanar as camadas de abstração computacional desde átomos até aplicações complexas.

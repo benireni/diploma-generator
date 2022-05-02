@@ -1,0 +1,67 @@
+Harware é aquilo que você chuta
+Software é aquilo que você xinga chuta
+
+## Organização x Arquitetura
+
+Arquitetura é o conjunto de atributos visíveis ao programador
+    - Conjuntos de instruções
+    - Número de bits por comando (32/64)
+    - Design do comando
+    - Mecanismos de IO
+    - Modos de  endereçamento
+
+e.g.: Qual a instrução para multiplicação
+
+Organização é como esses atributos estão implementados
+    - Sinais de controle
+    - Interfaces
+    - Tecnologia de memória
+
+e.g.: Há um hardware específico para multiplicação ou ela é feita por somas repetidas?
+
+
+Família intel x86 compartilha a mesma arquitetura básica
+Família IBM System/360 compartilha a mesma arquitetura básica
+- Portanto, entre membros da mesma família existe compatibilidade de código compilado
+
+O que evolui de acordo com o sistema (otimização, correções) seria a organização:
+    como e onde as instruções definidas pela arquitetura são processadas no hardware
+
+Por que estudar arquitetura de computadores?????
+~Um instituto de engenheiros elétricos disse que deveria estar no nosso currículo~
+Desconstruir o conceito de caixa preta dos computadores para os cientistas (mesmo sendo eles de software)
+
+
+## Estrutura e Função
+
+Computadores são estudados com descrições utilizando de sistemas hierárquicos e camadas de abstração
+
+Cada camada de abstração conta com uma estrutura e uma função:
+Estrutura 
+Função
+
+Hierarquia:
+High-level Program -> Machine Code (Assembly) -> Operational System -> Machine Architecture -> Microarchitecture -> Digital Systems
+
+
+## Von Neumann
+
+Sistemas de interconexão contam com:
+    - Processador
+    - Memória
+    - IO
+
+A CPU conta com:
+- Unidade de Controle
+- Unidade de Lógica e Aritmética
+- Registradores
+
+Os Registradores e Decodificadores da Unidade de Controle contam com:
+- Memória de controle
+- Lógica de sequenciamento
+
+APPENDS:
+- Monocycle Architecture: uma instrução para cada ciclo de clock
+- Cache tem três níveis no computador:
+    - L1 e L2 dentro dos cores (L1 < L2, mas ambos pequenos)
+    - L3 bem maior e é compartilhado por todos os cores

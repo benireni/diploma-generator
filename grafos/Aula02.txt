@@ -1,0 +1,22 @@
+## Grafo Euleriano
+
+O Caminho Euleriano é um caminho que contém cada e toda aresta do grafo exatamente uma vez.
+Pode ocorrer de forma a gerar um ciclo euleriano (se acaba no nó em que iniciou). Um grafo é
+Euleriano se há nele um ciclo Euleriano.
+
+É possível verificar se um caminho é Euleriano se, ao sequencialmente zerar seus valores na tabela
+de adjacência de um grafo, fazem com que a matriz não possua mais nenhuma célula que não seja zero.
+
+## Caminho Hamiltoniano
+
+Um caminho Hamiltoniano é aquele que contém cada e todo vértice do grafo exatamente uma vez. Pode
+ocorrer de forma a gerar um ciclo Hamiltoniano.
+
+## Conctividade
+
+Grafo Conexo tem todos os seus nós ligados à rede do mesmo.
+Grafos desconexos possuem ao menos um grafo (ou rede) isolada do resto dos nós.
+
+## Exercício
+Validar se existe aresta dado (i, j)
+Retornar grau (número de arestas saindo do vértice) e a lista de vértices adjacentes a um determinado vértice.

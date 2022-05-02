@@ -1,0 +1,43 @@
+''' ***************************************************************************
+|                       USP - Universidade de São Paulo                       |
+|            ICMC - Instituto de Ciências Matemáticas e de Computação         |
+*******************************************************************************
+|                    Bacharelado em Ciências de Computação                    |
+|                                   2021/2                                    |
+|                                                                             |
+|                      Autor: Benício Januário (12543843)                     |
+*******************************************************************************
+ > Erdös Renyi
+****************************************************************************'''
+
+# ---------- Python file ----------
+
+from random import random
+
+def erdos_renyi(order, link_probability):
+    matrix = [[0 for col in range(order)] for row in range(order)]
+    iterator = 1
+    for i in range(order - 1):
+        for j in range(iterator, order):
+            if (random() <= link_probability):
+                matrix[i][j] = matrix[j][i] = 1
+        iterator += 1
+    return matrix
+
+def print_adjacency_table(mx):
+    print("")
+    for i in range(len(mx)):
+        print("| ", end="")
+        for j in range(len(mx)):
+            print(mx[i][j], end=" ")
+        print("|")
+
+order = int(input("Provide desired graph order: "))
+link_probability = float(input("Provide the nodes linking probability: "))
+
+if link_probability < 0 or link_probability > 1:
+    print("\nYou must provide a link probability between zero and one.")
+    exit(1)
+
+graph_adjacency_table = erdos_renyi(order, link_probability)
+print_adjacency_table(graph_adjacency_table)

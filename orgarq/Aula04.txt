@@ -1,0 +1,39 @@
+Assembly MIPS
+
+REGISTRADORES
+$zero, $ro -> Sempre zero
+$at -> Reservado para o assembler (assembler temporary)
+$v0, $v1 -> Primeiro e segundo valores de retorno (v0 fica o argumento da syscall)
+$a0, ... , $a3 -> Primeiros 4 argumentos para funções
+$t0, ... , $t7 -> Registradores temporários
+$s0, ... , $s7 -> Registradores salvos
+$t8, $t9 -> Mais registradores temporários
+$k0, $k1 -> Reservados para o kernel do SO
+$gp -> Global pointer
+$sp -> Stack pointer
+$fp -> Floating point
+$ra -> Return address
+
+
+# Load Immediate
+li $y, x -> Não existe em MIPS, é uma pseudo-instrução.
+addi $y, $zero, x -> Existe em MIPS.
+
+add -> Instrução tipo R: registrador + registrador armazenado em registrador.
+addi -> Tipo immediate, soma números, não registradores.
+
+Simulador: MARS (MIPS Assembler and Runtime Simulator)
+
+Labels:
+
+identificam uma linha de código para referência
+ - desvios condicionais e de repetição (ifs e whiles)
+ - desvios incondicionais (jumps "j")
+ - chamadas a procedimentos
+    variação de desvio incondicional
+
+Code structuring:
+
+- .data -> static data
+- .text -> code
+- [reserved]

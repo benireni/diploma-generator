@@ -1,0 +1,4 @@
+Foquei em absolutamente nada, ver os slides e aprender essa aula do zero
+
+## Exercício
+Ler arquivo Pajek de forma a facilitar a remoção de arestas
