@@ -8,7 +8,7 @@ Arquitetura é o conjunto de atributos visíveis ao programador
     - Número de bits por comando (32/64)
     - Design do comando
     - Mecanismos de IO
-    - Modos de  endereçamento
+    - Modos de endereçamento
 
 e.g.: Qual a instrução para multiplicação
 
