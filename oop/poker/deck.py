@@ -6,7 +6,7 @@ class Deck():
     def __init__(self) -> None:
         self.cards = []
         for suit in range(4):
-            for value in range(1, 14): self.cards.append(Card(suit, value))
+            for value in range(2, 15): self.cards.append(Card(suit, value))
     
     def shuffle(self) -> None:
         random.shuffle(self.cards)
