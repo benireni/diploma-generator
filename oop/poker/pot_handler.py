@@ -15,9 +15,10 @@ class PotHandler():
     def read_gamble(self, budget) -> int:
         self.currentPot = budget
         while True:
-            pot = input("How much do you wish to gamble?\n")
+            pot = input("How much do you wish to gamble? (enter 'x' to quit)\n").strip()
             try:
-                pot = int(pot.strip())
+                if pot == 'x': return -1
+                pot = int(pot)
 
                 if (pot <= 0): print("It must be a positive number\n")
                 elif (pot > budget): print("Not enought budget in your wallet. Try a smaller value.\n")

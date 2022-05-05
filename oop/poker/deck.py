@@ -5,13 +5,19 @@ from card import Card
 class Deck():
     def __init__(self) -> None:
         self.cards = []
+        self.fill()
+    
+    def fill(self) -> None:
         for suit in range(4):
             for value in range(2, 15): self.cards.append(Card(suit, value))
-    
+
     def shuffle(self) -> None:
         random.shuffle(self.cards)
 
     def deal(self, hand_size = 1) -> list:
+        if hand_size > len(self.cards):
+            self.fill()
+            self.shuffle()
         if hand_size == 1: return self.cards.pop()
 
         hand = self.cards[-hand_size:]

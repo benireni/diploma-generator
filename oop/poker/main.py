@@ -20,6 +20,8 @@ if __name__ == "__main__":
         print(f"Current budget: {player_wallet.budget}\n")
 
         pot = pot_handler.read_gamble(player_wallet.budget)
+        if pot == -1: break
+
         player_wallet.pay(pot)
 
         hand = deck.deal(5)
@@ -41,5 +43,5 @@ if __name__ == "__main__":
 
         round += 1
     
-    print("You're broke! The house always wins ;)")
+    if player_wallet.isBroke(): print("\nYou're broke! The house always wins ;)")
     print("Bye!")
