@@ -16,7 +16,9 @@ class Renderer():
         for i in source: 
             print(f"| {self.__suits_symbol[i.suit]}", end="")
             if i.value != 10: print(" ", end="")
-            print(f"{self.__face_cards[i.value - 11] if i.value > 10 else i.value} |", end=" ")
+            print(
+                f"{self.__face_cards[i.value - 11] if i.value > 10 else i.value} |", end=" "
+            )
 
         print("\n", end="")
         print("|     | "*len(source))

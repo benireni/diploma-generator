@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="mineSweeper">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/icc2sem/mineSweeper/mineSweeper.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

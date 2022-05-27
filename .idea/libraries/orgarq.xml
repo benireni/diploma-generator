@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="orgarq">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/orgarq/Mars4_5_1_1Unofficial.jar!/" />
+      <root url="jar://$PROJECT_DIR$/orgarq/Mars4_5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
